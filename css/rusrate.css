@@ -11,35 +11,35 @@
 .rrmessage{
 	display:none;
 	z-index:inherit;
-	width:300px;
 	background-color:red;
-	min-height:75px;
 	padding:10px;
 	font-size:14px;
 	position:relative;
+	min-height:50px;
 }
+.rrmessage p {margin:1em 0;}
 .rrage{
 	display:block;
 	position:absolute;
-	font-size:18px;
+	font-size:14px;
 	font-weight:bold;
 }
 .rr:hover{cursor:pointer;}
 /*   Top   */
 .p_tr , .p_tl{top:0;}
-.p_tr .shape, .p_tl .shape{ border-top: 75px solid red; }
+.p_tr .shape, .p_tl .shape{ border-top: 50px solid red; }
 .p_tr .rrage, .p_tl .rrage{top:0;}
 /*  Bottom  */
 .p_br , .p_bl{bottom:0;}
-.p_br .shape, .p_bl .shape{ border-bottom: 75px solid red; }
+.p_br .shape, .p_bl .shape{ border-bottom: 50px solid red; }
 .p_br .rrage, .p_bl .rrage{bottom:0;}
 /*  Right  */
 .p_tr, .p_br{ right:0;}
-.p_tr .shape,.p_br .shape{border-left: 75px solid transparent;}
-.p_tr .rrmessage, .p_br .rrmessage{margin-left:75px;right:0;}
-.p_tr .rrage, .p_br .rrage{left:0;	padding:10px 40px;}
+.p_tr .shape,.p_br .shape{border-left: 50px solid transparent;}
+.p_tr .rrmessage, .p_br .rrmessage{right:0;}
+.p_tr .rrage, .p_br .rrage{left:0;	padding:10px 25px;}
 /*  Left  */
 .p_tl, .p_bl{left:0;}
-.p_tl .shape, .p_bl .shape{border-right: 75px solid transparent;}
-.p_tl .rrmessage, .p_bl .rrmessage{margin-right:75px;left:0;}
-.p_tl .rrage, .p_bl .rrage{right:0;padding:10px 40px;}
+.p_tl .shape, .p_bl .shape{border-right: 50px solid transparent;}
+.p_tl .rrmessage, .p_bl .rrmessage{left:0;}
+.p_tl .rrage, .p_bl .rrage{right:0;padding:10px 25px;}

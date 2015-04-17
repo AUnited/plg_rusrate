@@ -54,7 +54,7 @@ class  plgSystemRusRate extends JPlugin {
 		// Getting created page text
 		$buffer = JResponse::getBody();
 		// Making replacements
-		$buffer = str_replace('</body>', '<div class="rr p_'.$position.'"><div class="shape"></div><p class="rrage">'.$age.'+</p><p class="rrmessage">'.$text.'.</p></div></body>', $buffer);
+		$buffer = str_replace('</body>', '<div class="rr p_'.$position.'"><div class="shape"></div><p class="rrage">'.$age.'+</p><div class="rrmessage"><p>'.$text.'</p></div></div></body>', $buffer);
 
 		if ($buffer != '') {
 			// Moving page text
@@ -96,8 +96,8 @@ class  plgSystemRusRate extends JPlugin {
 				$dStyle = '.rr:hover .rrage, .rr:hover .shape{display:none;}.rr:hover .rrmessage{display:block;}';
 			}
 			$style = '
-				.p_br .shape, .p_bl .shape{ border-bottom: 75px solid '.$bgcolor.' !important; }
-				.p_tr .shape, .p_tl .shape{ border-top: 75px solid '.$bgcolor.' !important; }
+				.p_br .shape, .p_bl .shape{ border-bottom: 50px solid '.$bgcolor.' !important; }
+				.p_tr .shape, .p_tl .shape{ border-top: 50px solid '.$bgcolor.' !important; }
 				.rrmessage{background-color:'.$bgcolor.';}
 				.rr a{color:'.$color.' !important;}
 				.rrmessage{color:'.$color.';}
