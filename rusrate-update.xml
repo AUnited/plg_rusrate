@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE updates PUBLIC "-//Joomla! 3.0//DTD template 1.0//EN" "http://help.aunited.ru/jdtd/3.0/update.dtd">
+<updates>
+   <update>
+      <name>SunStat</name>
+      <description>RusRate age rating plugin for Joomla</description>
+      <element>plg_rusrate</element>
+      <type>plugin</type>
+      <version>0.9</version>
+ 
+      <infourl title="SunStat URL">http://help.aunited.ru/rusrate/</infourl>
+      <downloads>
+         <downloadurl type="full" format="zip">https://github.com/AUnited/plg_rusrate/archive/0.9.zip</downloadurl>
+      </downloads>
+      <tags>
+         <tag>rusrate</tag>
+      </tags>
+ 
+      <maintainer>AUnited Company Limited</maintainer>
+      <maintainerurl>http://aunited.ru</maintainerurl>
+      <targetplatform name="joomla" version="2.5" />
+   </update>
+</updates>
